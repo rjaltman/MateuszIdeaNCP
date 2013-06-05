@@ -14,6 +14,7 @@
         If MapCheckBox.Checked Then
             Shell("net use s: \\nscollege-srv01.instr.cps.k12.il.us\Courses")
             Shell("explorer s:")
+            'if this doesn't work again, then we can try the /yes stuff from below mebeh?
         End If
         Shell("explorer q:")
 
@@ -24,6 +25,7 @@
         Shell("net use q: /delete /yes")
         Shell("net use s: /delete /yes")
         Shell("explorer.exe")
+        'so we have to try these changes tomorrow.
     End Sub
 
 
