@@ -22,8 +22,9 @@ Partial Class MapNetworkDrive
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MapNetworkDrive))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.MapButton = New System.Windows.Forms.CheckBox()
+        Me.MapCheckBox = New System.Windows.Forms.CheckBox()
         Me.UserBox = New System.Windows.Forms.TextBox()
         Me.PassBox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -41,29 +42,29 @@ Partial Class MapNetworkDrive
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Username:"
         '
-        'MapButton
+        'MapCheckBox
         '
-        Me.MapButton.AutoSize = True
-        Me.MapButton.Location = New System.Drawing.Point(43, 121)
-        Me.MapButton.Name = "MapButton"
-        Me.MapButton.Size = New System.Drawing.Size(117, 17)
-        Me.MapButton.TabIndex = 1
-        Me.MapButton.Text = "Map Course Drive?"
-        Me.MapButton.UseVisualStyleBackColor = True
+        Me.MapCheckBox.AutoSize = True
+        Me.MapCheckBox.Location = New System.Drawing.Point(43, 121)
+        Me.MapCheckBox.Name = "MapCheckBox"
+        Me.MapCheckBox.Size = New System.Drawing.Size(117, 17)
+        Me.MapCheckBox.TabIndex = 5
+        Me.MapCheckBox.Text = "Map Course Drive?"
+        Me.MapCheckBox.UseVisualStyleBackColor = True
         '
         'UserBox
         '
         Me.UserBox.Location = New System.Drawing.Point(128, 22)
         Me.UserBox.Name = "UserBox"
         Me.UserBox.Size = New System.Drawing.Size(287, 20)
-        Me.UserBox.TabIndex = 2
+        Me.UserBox.TabIndex = 1
         '
         'PassBox
         '
         Me.PassBox.Location = New System.Drawing.Point(128, 72)
         Me.PassBox.Name = "PassBox"
         Me.PassBox.Size = New System.Drawing.Size(287, 20)
-        Me.PassBox.TabIndex = 3
+        Me.PassBox.TabIndex = 2
         Me.PassBox.UseSystemPasswordChar = True
         '
         'Label2
@@ -81,16 +82,16 @@ Partial Class MapNetworkDrive
         Me.Map.Location = New System.Drawing.Point(340, 115)
         Me.Map.Name = "Map"
         Me.Map.Size = New System.Drawing.Size(75, 23)
-        Me.Map.TabIndex = 5
+        Me.Map.TabIndex = 3
         Me.Map.Text = "Map"
         Me.Map.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(206, 115)
+        Me.Button1.Location = New System.Drawing.Point(217, 115)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(117, 23)
-        Me.Button1.TabIndex = 6
+        Me.Button1.TabIndex = 4
         Me.Button1.Text = "Clear Mapped Drives"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -98,22 +99,25 @@ Partial Class MapNetworkDrive
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(459, 168)
+        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.ClientSize = New System.Drawing.Size(439, 161)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Map)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PassBox)
         Me.Controls.Add(Me.UserBox)
-        Me.Controls.Add(Me.MapButton)
+        Me.Controls.Add(Me.MapCheckBox)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MapNetworkDrive"
-        Me.Text = "Map Network Drive"
+        Me.Text = "Drive Mapper v1.0"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents MapButton As System.Windows.Forms.CheckBox
+    Friend WithEvents MapCheckBox As System.Windows.Forms.CheckBox
     Friend WithEvents UserBox As System.Windows.Forms.TextBox
     Friend WithEvents PassBox As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
