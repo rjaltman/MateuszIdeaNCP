@@ -27,7 +27,6 @@ Partial Class Form2
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -87,18 +86,9 @@ Partial Class Form2
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "For the lazy..."
         '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(223, 46)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(110, 23)
-        Me.Button3.TabIndex = 6
-        Me.Button3.Text = "Re-Launch Explorer"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(87, 46)
+        Me.Button4.Location = New System.Drawing.Point(86, 73)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(130, 23)
         Me.Button4.TabIndex = 7
@@ -108,7 +98,7 @@ Partial Class Form2
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 51)
+        Me.Label3.Location = New System.Drawing.Point(12, 78)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(69, 13)
         Me.Label3.TabIndex = 8
@@ -116,14 +106,14 @@ Partial Class Form2
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(361, 14)
+        Me.TextBox1.Location = New System.Drawing.Point(167, 44)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(32, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(29, 20)
         Me.TextBox1.TabIndex = 9
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(280, 12)
+        Me.Button5.Location = New System.Drawing.Point(86, 42)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 10
@@ -132,7 +122,7 @@ Partial Class Form2
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(87, 75)
+        Me.Button6.Location = New System.Drawing.Point(224, 73)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(97, 23)
         Me.Button6.TabIndex = 11
@@ -216,7 +206,6 @@ Partial Class Form2
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -233,7 +222,6 @@ Partial Class Form2
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
