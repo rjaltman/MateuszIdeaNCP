@@ -14,7 +14,6 @@
             Shell("net use q: \\nscollege-srv01.instr.cps.k12.il.us\student\" & a & " /user:instr.cps.k12.il.us\" & a & " " & b)
             If MapCheckBox.Checked Then
                 Shell("net use s: \\nscollege-srv01.instr.cps.k12.il.us\Courses")
-                Shell("explorer s:")
                 'if this doesn't work again, then we can try the /yes stuff from below mebeh?
             End If
         End If
@@ -23,11 +22,10 @@
     End Sub
 
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Shell("taskkill /f /im explorer.exe")
         Shell("net use q: /delete /yes")
         Shell("net use s: /delete /yes")
-        Shell("explorer.exe")
-        'so we have to try these changes tomorrow.
+        Shell("explorer")
+        'BITCH THIS SHIT WORKS OMQQQ'
     End Sub
 
 
