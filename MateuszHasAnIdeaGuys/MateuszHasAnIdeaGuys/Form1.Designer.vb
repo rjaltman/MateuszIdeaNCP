@@ -47,9 +47,9 @@ Partial Class MapNetworkDrive
         Me.MapCheckBox.AutoSize = True
         Me.MapCheckBox.Location = New System.Drawing.Point(43, 121)
         Me.MapCheckBox.Name = "MapCheckBox"
-        Me.MapCheckBox.Size = New System.Drawing.Size(117, 17)
+        Me.MapCheckBox.Size = New System.Drawing.Size(122, 17)
         Me.MapCheckBox.TabIndex = 5
-        Me.MapCheckBox.Text = "Map Course Drive?"
+        Me.MapCheckBox.Text = "Map Courses Drive?"
         Me.MapCheckBox.UseVisualStyleBackColor = True
         '
         'UserBox
